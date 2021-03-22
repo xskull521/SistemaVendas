@@ -53,6 +53,7 @@
     <Compile Include="Repositorio\ClienteRepositorio.cs" />
     <Compile Include="Repositorio\FornecedorRepositorio.cs" />
     <Compile Include="Repositorio\HistoricoVendasRepositorio.cs" />
+    <Compile Include="Repositorio\InsertClient.cs" />
     <Compile Include="Repositorio\ProdutoRepositorioRepositorio.cs" />
     <Compile Include="Repositorio\ProdutoFornecedorRepositorio.cs" />
   </ItemGroup>

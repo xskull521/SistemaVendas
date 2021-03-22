@@ -1,0 +1,9 @@
+C:\Users\Higor Anjps\source\repos\ProjetoEstudoBancoDeDados\CadastroGeral.Dominio\bin\Debug\CadastroGeral.Dominio.dll
+C:\Users\Higor Anjps\source\repos\ProjetoEstudoBancoDeDados\CadastroGeral.Dominio\bin\Debug\CadastroGeral.Dominio.pdb
+C:\Users\Higor Anjps\source\repos\ProjetoEstudoBancoDeDados\CadastroGeral.Dominio\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Higor Anjps\source\repos\ProjetoEstudoBancoDeDados\CadastroGeral.Dominio\bin\Debug\System.Data.SqlClient.xml
+C:\Users\Higor Anjps\source\repos\ProjetoEstudoBancoDeDados\CadastroGeral.Dominio\obj\Debug\SistemaVendas.Dominio.csprojAssemblyReference.cache
+C:\Users\Higor Anjps\source\repos\ProjetoEstudoBancoDeDados\CadastroGeral.Dominio\obj\Debug\SistemaVendas.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Higor Anjps\source\repos\ProjetoEstudoBancoDeDados\CadastroGeral.Dominio\obj\Debug\SistemaVendas.Dominio.csproj.CopyComplete
+C:\Users\Higor Anjps\source\repos\ProjetoEstudoBancoDeDados\CadastroGeral.Dominio\obj\Debug\CadastroGeral.Dominio.dll
+C:\Users\Higor Anjps\source\repos\ProjetoEstudoBancoDeDados\CadastroGeral.Dominio\obj\Debug\CadastroGeral.Dominio.pdb

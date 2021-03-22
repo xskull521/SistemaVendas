@@ -48,7 +48,7 @@ namespace SistemaVendas.Dominio.Repositorio
                                 IdProduto = Convert.ToInt32(reader["IdProduto"]),
                                 NomeProduto = reader[" NomeProduto "].ToString(),
                                 DescricaoProduto = reader[" DescricaoProduto "].ToString(),
-                                Imagem = Convert.ToByte(reader["Imagem "])
+                                Imagem = Convert.ToByte(reader["Imagem"])
 
                             });
                         }

@@ -1,10 +1,12 @@
 ﻿using SistemaVendas.Dominio.Entidades;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 
 namespace SistemaVendas.Dominio.Repositorio
@@ -64,5 +66,49 @@ namespace SistemaVendas.Dominio.Repositorio
 
             }
         }
+
+        public void AddEmployee(Cliente employee)
+        {
+            //int maxId = listEmp.Max(e => e.ID);  
+            //employee.ID = maxId + 1;  
+            //listEmp.Add(employee);  
+
+
+            SqlConnection myConnection = new SqlConnection();
+            myConnection.ConnectionString = @"Data Source=localhost\sqlexpress;Initial Catalog=CadastroGeral;";
+            //SqlCommand sqlCmd = new SqlCommand("INSERT INTO tblEmployee (EmployeeId,Name,ManagerId) Values (@EmployeeId,@Name,@ManagerId)", myConnection);  
+            SqlCommand sqlCmd = new SqlCommand();
+            sqlCmd.CommandType = CommandType.Text;
+            sqlCmd.CommandText = "INSERT INTO CLiente (Nome,Email,Endereco,Celular,Cpf) Values (@Nome,@Email,@Endereco,@Celular,@Cpf)";
+            sqlCmd.Connection = myConnection;
+
+
+            sqlCmd.Parameters.AddWithValue("@Nome", employee.Nome);
+            sqlCmd.Parameters.AddWithValue("@Email", employee.Email);
+            sqlCmd.Parameters.AddWithValue("@Endereco", employee.Endereco);
+            sqlCmd.Parameters.AddWithValue("@Celular", employee.Celular);
+            sqlCmd.Parameters.AddWithValue("@Cpf", employee.Cpf);
+            myConnection.Open();
+            int rowInserted = sqlCmd.ExecuteNonQuery();
+            myConnection.Close();
+        }
+
+        public void DeleteEmployeeByID(int id)
+        {
+            SqlConnection myConnection = new SqlConnection();
+            myConnection.ConnectionString = @"Data Source=localhost\sqlexpress;Initial Catalog=CadastroGeral;";
+
+            SqlCommand sqlCmd = new SqlCommand();
+            sqlCmd.CommandType = CommandType.Text;
+            sqlCmd.CommandText = "delete from tblEmployee where EmployeeId=" + id + "";
+            sqlCmd.Connection = myConnection;
+            myConnection.Open();
+            int rowDeleted = sqlCmd.ExecuteNonQuery();
+            myConnection.Close();
+        }
+
     }
 }
+
+
+
